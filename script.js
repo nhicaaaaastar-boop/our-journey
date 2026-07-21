@@ -19,10 +19,10 @@ function updateLoan(){
 
 
 
-    loans.forEach(function(item){
+    loans.forEach(function(loan){
 
 
-        if(item.checked){
+        if(loan.checked){
 
             paid += paymentAmount;
 
@@ -37,15 +37,28 @@ function updateLoan(){
 
 
 
-    document.getElementById("loanProgress").style.width =
-    percent + "%";
+    const loanBar = document.getElementById("loanProgress");
+
+
+    const loanText = document.getElementById("loanText");
 
 
 
-    document.getElementById("loanText").innerHTML =
-    "₱" + paid.toLocaleString() +
-    " / ₱44,310 Paid";
+    if(loanBar){
 
+        loanBar.style.width = percent + "%";
+
+    }
+
+
+
+    if(loanText){
+
+        loanText.innerHTML =
+        "₱" + paid.toLocaleString() +
+        " / ₱44,310 Paid";
+
+    }
 
 
 }
@@ -54,10 +67,12 @@ function updateLoan(){
 
 
 
-loans.forEach(function(item){
 
 
-    item.addEventListener(
+loans.forEach(function(loan){
+
+
+    loan.addEventListener(
         "change",
         updateLoan
     );
@@ -71,10 +86,11 @@ loans.forEach(function(item){
 
 
 
-// ===============================
-// 📊 OVERALL JOURNEY PROGRESS
-// ===============================
 
+
+// ===============================
+// 📊 JOURNEY PROGRESS
+// ===============================
 
 
 const tasks = document.querySelectorAll(".task");
@@ -85,15 +101,14 @@ const tasks = document.querySelectorAll(".task");
 function updateProgress(){
 
 
-
     let completed = 0;
 
 
 
-    tasks.forEach(function(item){
+    tasks.forEach(function(task){
 
 
-        if(item.checked){
+        if(task.checked){
 
             completed++;
 
@@ -106,7 +121,6 @@ function updateProgress(){
 
 
     let total = tasks.length;
-
 
 
     let percent = 0;
@@ -124,15 +138,33 @@ function updateProgress(){
 
 
 
-    document.getElementById("overallProgress")
-    .style.width =
-    percent + "%";
+    const progressBar =
+    document.getElementById("overallProgress");
 
 
 
-    document.getElementById("overallText")
-    .innerHTML =
-    percent + "% Completed";
+    const progressText =
+    document.getElementById("overallText");
+
+
+
+
+    if(progressBar){
+
+        progressBar.style.width =
+        percent + "%";
+
+    }
+
+
+
+
+    if(progressText){
+
+        progressText.innerHTML =
+        percent + "% Completed";
+
+    }
 
 
 
@@ -144,10 +176,10 @@ function updateProgress(){
 
 
 
-tasks.forEach(function(item){
+tasks.forEach(function(task){
 
 
-    item.addEventListener(
+    task.addEventListener(
         "change",
         updateProgress
     );
@@ -162,8 +194,9 @@ tasks.forEach(function(item){
 
 
 
+
 // ===============================
-// INITIAL LOAD
+// START PAGE
 // ===============================
 
 
