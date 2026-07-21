@@ -40,6 +40,7 @@ body{
 
 
 
+
 h1{
 
     text-align:center;
@@ -54,6 +55,7 @@ h1{
     0 0 18px #ff6b9d;
 
 }
+
 
 
 
@@ -74,6 +76,8 @@ h1{
 
 
 
+
+
 .hero{
 
     background:
@@ -84,13 +88,18 @@ h1{
         #8e2de2
     );
 
+
     padding:30px;
+
 
     border-radius:30px;
 
+
     text-align:center;
 
+
     margin-bottom:25px;
+
 
     box-shadow:
 
@@ -115,6 +124,7 @@ h1{
     margin:15px 0;
 
 }
+
 
 
 
@@ -184,7 +194,9 @@ h3{
 
 
 
+
 .memory{
+
 
     background:
 
@@ -193,6 +205,7 @@ h3{
         rgba(255,105,150,.18),
         rgba(142,45,226,.18)
     );
+
 
 
     padding:18px;
@@ -238,34 +251,8 @@ h3{
 
 
 
-.event{
-
-    background:
-
-    rgba(255,255,255,.06);
-
-
-    padding:18px;
-
-
-    border-radius:18px;
-
-
-    margin:15px 0;
-
-
-    line-height:1.6;
-
-}
-
-
-
-
-
-
-
-
 label{
+
 
     display:block;
 
@@ -276,12 +263,16 @@ label{
     padding:12px;
 
 
+
     background:
+
 
     rgba(255,255,255,.05);
 
 
+
     border-radius:15px;
+
 
 
     transition:.3s;
@@ -292,7 +283,9 @@ label{
 
 label:hover{
 
+
     background:
+
 
     rgba(255,105,150,.18);
 
@@ -304,7 +297,9 @@ label:hover{
 
 
 
+
 input[type="checkbox"]{
+
 
     transform:scale(1.4);
 
@@ -322,7 +317,10 @@ input[type="checkbox"]{
 
 
 
+
+
 .progress{
+
 
     width:100%;
 
@@ -330,13 +328,17 @@ input[type="checkbox"]{
     height:18px;
 
 
+
     background:#333;
+
 
 
     border-radius:20px;
 
 
+
     overflow:hidden;
+
 
 
     margin:15px 0;
@@ -347,15 +349,22 @@ input[type="checkbox"]{
 
 
 
+
+
 .bar{
 
+
     height:100%;
+
 
 
     width:0%;
 
 
+
     background:
+
+
 
     linear-gradient(
         90deg,
@@ -364,7 +373,9 @@ input[type="checkbox"]{
     );
 
 
+
     border-radius:20px;
+
 
 
     transition:.5s;
@@ -377,7 +388,9 @@ input[type="checkbox"]{
 
 
 
+
 .footer{
+
 
     text-align:center;
 
@@ -385,8 +398,6 @@ input[type="checkbox"]{
     color:#ffb6d0;
 
 }
-
-
 
 
 
@@ -402,12 +413,16 @@ input[type="checkbox"]{
 
 
 
+
+
 @media(max-width:600px){
 
 
     .container{
 
+
         padding:15px;
+
 
     }
 
@@ -415,7 +430,9 @@ input[type="checkbox"]{
 
     h1{
 
+
         font-size:34px;
+
 
     }
 
@@ -423,7 +440,9 @@ input[type="checkbox"]{
 
     .hero h3{
 
+
         font-size:28px;
+
 
     }
 
@@ -431,7 +450,9 @@ input[type="checkbox"]{
 
     .card{
 
+
         padding:20px;
+
 
     }
 
