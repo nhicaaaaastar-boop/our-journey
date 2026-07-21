@@ -1,63 +1,31 @@
-const loans = document.querySelectorAll(".loan");
-const tasks = document.querySelectorAll(".task");
+const loans=document.querySelectorAll(".loan");
 
 
 function updateLoan(){
 
-let paid = 0;
+let paid=0;
+
 
 loans.forEach(item=>{
 
 if(item.checked){
 
-paid += 7385;
+paid+=7385;
 
 }
 
 });
 
 
-let percent = (paid / 44310) * 100;
+let percent=(paid/44310)*100;
 
 
-document.getElementById("loanProgress").style.width =
-percent + "%";
-
-
-document.getElementById("loanText").innerHTML =
-"₱" + paid.toLocaleString() +
-" / ₱44,310 Paid";
-
-
-}
-
-
-function updateOverall(){
-
-let total = tasks.length;
-let completed = 0;
-
-
-tasks.forEach(item=>{
-
-if(item.checked){
-
-completed++;
-
-}
-
-});
-
-
-let percent = Math.round((completed/total)*100);
-
-
-document.getElementById("overallProgress").style.width =
+document.getElementById("loanProgress").style.width=
 percent+"%";
 
 
-document.getElementById("overallText").innerHTML =
-percent+"% Complete";
+document.getElementById("loanText").innerHTML=
+"₱"+paid.toLocaleString()+" / ₱44,310 Paid";
 
 
 }
@@ -71,12 +39,4 @@ item.addEventListener("change",updateLoan);
 });
 
 
-tasks.forEach(item=>{
-
-item.addEventListener("change",updateOverall);
-
-});
-
-
 updateLoan();
-updateOverall();
