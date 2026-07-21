@@ -1,9 +1,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Our Journey ❤️</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+<title>Our Journey ❤️</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
 
 <body>
@@ -11,100 +13,363 @@
 <div class="container">
 
 <h1>❤️ Our Journey</h1>
-<p class="quote">"One step closer to our dreams."</p>
+<p class="quote">
+"One step closer to our dreams."
+</p>
+
+
+<!-- DASHBOARD -->
 
 <div class="card">
-<h2>📊 Dashboard</h2>
-<p>Goals Completed</p>
+<h2>📊 Our Progress</h2>
+
+<p>Completed Goals</p>
+
 <div class="progress">
-<div class="bar" style="width:30%"></div>
-</div>
-<p>30% Complete</p>
+<div class="bar" id="overallProgress"></div>
 </div>
 
+<p id="overallText">
+0% Complete
+</p>
+
+</div>
+
+
+
+<!-- PLANS -->
 
 <div class="card">
+
 <h2>📅 Upcoming Plans</h2>
 
 <label>
-<input type="checkbox">
- Meet MGT at Airport - Nov 18
+<input type="checkbox" class="task">
+Meet MGT at the airport - Nov 18
 </label>
 
 <label>
-<input type="checkbox">
- Book Hotel - Nov 24
+<input type="checkbox" class="task">
+Take leave Nov 18 (Half Day)
 </label>
 
 <label>
-<input type="checkbox">
- MOA Hotel - Dec 9-12
+<input type="checkbox" class="task">
+Take leave Nov 19 (Whole Day)
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Book hotel Nov 24
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Book MOA hotel Dec 9-12
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Open Maribank account
 </label>
 
 </div>
 
 
-<div class="card">
-<h2>💰 Savings Goal</h2>
 
-<p>Monthly Ipon Challenge</p>
+<!-- LOAN -->
+
+<div class="card">
+
+<h2>💸 Loan Tracker ❤️</h2>
+
+
+<p>
+<b>Total Payable:</b> ₱44,310
+</p>
+
+<p>
+₱7,385 every 2nd and 4th Friday
+</p>
+
 
 <div class="progress">
-<div class="bar" style="width:45%"></div>
+<div class="bar" id="loanProgress"></div>
 </div>
 
-<p>₱43,805 / ₱100,000</p>
+<p id="loanText">
+₱0 / ₱44,310 Paid
+</p>
+
+
+
+<h3>August</h3>
+
+<label>
+<input type="checkbox" class="loan">
+August 14 - ₱7,385
+</label>
+
+<label>
+<input type="checkbox" class="loan">
+August 28 - ₱7,385
+</label>
+
+
+
+<h3>September</h3>
+
+<label>
+<input type="checkbox" class="loan">
+September 11 - ₱7,385
+</label>
+
+<label>
+<input type="checkbox" class="loan">
+September 25 - ₱7,385
+</label>
+
+
+
+<h3>October</h3>
+
+<label>
+<input type="checkbox" class="loan">
+October 9 - ₱7,385
+</label>
+
+<label>
+<input type="checkbox" class="loan">
+October 23 - ₱7,385
+</label>
+
 
 </div>
 
+
+
+
+
+<!-- SAVINGS -->
 
 <div class="card">
-<h2>🎯 Dreams</h2>
 
-<ul>
-<li>🏪 Rice Business (2027)</li>
-<li>🚗 First Car (2028)</li>
-<li>🏢 First Condo (2028)</li>
-<li>✈️ Hong Kong Disneyland</li>
-<li>💍 Proposal ❤️</li>
-</ul>
+<h2>🏦 Ipon Challenge</h2>
+
+<p>
+Starting November
+</p>
+
+<p>
+Current Savings: ₱0
+</p>
+
+
+<label>
+<input type="checkbox" class="task">
+Start monthly savings goal
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Set savings target
+</label>
+
+<label>
+<input type="checkbox" class="task">
+First deposit
+</label>
+
 
 </div>
 
 
+
+
+<!-- DREAMS -->
+
 <div class="card">
+
+<h2>🎯 Our Dreams</h2>
+
+
+<label>
+<input type="checkbox" class="task">
+Start Bigasan Business (2027)
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Buy First Car (2028)
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Buy First Condo (2028)
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Hong Kong Disneyland with Parents
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Proposal ❤️
+</label>
+
+
+</div>
+
+
+
+
+
+<!-- FOOD -->
+
+<div class="card">
+
 <h2>🍔 Food Bucket List</h2>
 
-<label><input type="checkbox"> Jollibee Chickenjoy + Spaghetti</label>
-<label><input type="checkbox"> Chicken Inasal</label>
-<label><input type="checkbox"> Coco Milk Tea</label>
-<label><input type="checkbox"> Yellow Cab Pizza</label>
-<label><input type="checkbox"> Yakiniku</label>
+
+<label>
+<input type="checkbox" class="task">
+Chicken Inasal
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Jollibee Chickenjoy + Spaghetti
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Coco Milk Tea
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Yellow Cab Cheese Pizza
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Yakiniku
+</label>
+
 
 </div>
 
+
+
+
+
+
+<!-- FAVORITES -->
 
 <div class="card">
+
 <h2>🎁 Her Favorites</h2>
 
-<p>Perfume:</p>
-<ul>
-<li>Baccarat Rouge 540</li>
-<li>Zara Red Temptation Sweet</li>
-</ul>
 
-<p>Colors:</p>
-<p>🖤 Black 💗 Pink ❤️ Maroon</p>
+<p>Perfume</p>
 
-<p>Coffee:</p>
-<p>☕ Iced Shaken Espresso<br>
-☕ White Mocha</p>
+<label>
+<input type="checkbox" class="task">
+Baccarat Rouge 540
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Zara Red Temptation Sweet
+</label>
+
+
+
+<p>Colors</p>
+
+<label>
+<input type="checkbox" class="task">
+Black
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Pink
+</label>
+
+<label>
+<input type="checkbox" class="task">
+Maroon
+</label>
+
+
+
+<p>Coffee</p>
+
+<label>
+<input type="checkbox" class="task">
+Iced Shaken Espresso
+</label>
+
+<label>
+<input type="checkbox" class="task">
+White Mocha
+</label>
+
 
 </div>
 
+
+
+
+<!-- COUPLE -->
+
+<div class="card">
+
+<h2>💕 Couple Goals</h2>
+
+
+<label>
+<input type="checkbox" class="task">
+Monthly date
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Monthly goal check-in
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Create new memories
+</label>
+
+
+<label>
+<input type="checkbox" class="task">
+Support each other's dreams
+</label>
+
+
 </div>
+
+
+</div>
+
 
 <script src="script.js"></script>
+
 
 </body>
 </html>
