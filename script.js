@@ -12,6 +12,7 @@ const paymentAmount = 7385;
 
 
 
+
 function updateLoan(){
 
 
@@ -24,7 +25,9 @@ function updateLoan(){
 
         if(loan.checked){
 
+
             paid += paymentAmount;
+
 
         }
 
@@ -33,36 +36,48 @@ function updateLoan(){
 
 
 
+
     let percent = (paid / totalLoan) * 100;
 
 
 
-    const loanBar = document.getElementById("loanProgress");
+
+    const loanProgress =
+    document.getElementById("loanProgress");
 
 
-    const loanText = document.getElementById("loanText");
+
+    const loanText =
+    document.getElementById("loanText");
 
 
 
-    if(loanBar){
 
-        loanBar.style.width = percent + "%";
+
+    if(loanProgress){
+
+
+        loanProgress.style.width =
+        percent + "%";
+
 
     }
+
 
 
 
     if(loanText){
 
+
         loanText.innerHTML =
         "₱" + paid.toLocaleString() +
         " / ₱44,310 Paid";
+
 
     }
 
 
 }
-
 
 
 
@@ -93,12 +108,16 @@ loans.forEach(function(loan){
 // ===============================
 
 
+
 const tasks = document.querySelectorAll(".task");
 
 
 
 
+
+
 function updateProgress(){
+
 
 
     let completed = 0;
@@ -110,7 +129,9 @@ function updateProgress(){
 
         if(task.checked){
 
+
             completed++;
+
 
         }
 
@@ -120,20 +141,27 @@ function updateProgress(){
 
 
 
+
     let total = tasks.length;
+
 
 
     let percent = 0;
 
 
 
+
     if(total > 0){
+
 
         percent = Math.round(
             (completed / total) * 100
         );
 
+
     }
+
+
 
 
 
@@ -149,20 +177,29 @@ function updateProgress(){
 
 
 
+
+
+
     if(progressBar){
+
 
         progressBar.style.width =
         percent + "%";
+
 
     }
 
 
 
 
+
+
     if(progressText){
+
 
         progressText.innerHTML =
         percent + "% Completed";
+
 
     }
 
@@ -196,8 +233,9 @@ tasks.forEach(function(task){
 
 
 // ===============================
-// START PAGE
+// ❤️ LOAD DASHBOARD
 // ===============================
+
 
 
 updateLoan();
