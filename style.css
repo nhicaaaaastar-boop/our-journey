@@ -1,110 +1,98 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Our Journey ❤️</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-</head>
+body{
 
-<body>
+background:#111;
+color:white;
+font-family:Arial,sans-serif;
 
-<div class="container">
-
-<h1>❤️ Our Journey</h1>
-<p class="quote">"One step closer to our dreams."</p>
-
-<div class="card">
-<h2>📊 Dashboard</h2>
-<p>Goals Completed</p>
-<div class="progress">
-<div class="bar" style="width:30%"></div>
-</div>
-<p>30% Complete</p>
-</div>
+}
 
 
-<div class="card">
-<h2>📅 Upcoming Plans</h2>
+.container{
 
-<label>
-<input type="checkbox">
- Meet MGT at Airport - Nov 18
-</label>
+max-width:600px;
+margin:auto;
+padding:20px;
 
-<label>
-<input type="checkbox">
- Book Hotel - Nov 24
-</label>
-
-<label>
-<input type="checkbox">
- MOA Hotel - Dec 9-12
-</label>
-
-</div>
+}
 
 
-<div class="card">
-<h2>💰 Savings Goal</h2>
+h1{
 
-<p>Monthly Ipon Challenge</p>
+text-align:center;
+color:#ff5c8a;
 
-<div class="progress">
-<div class="bar" style="width:45%"></div>
-</div>
-
-<p>₱43,805 / ₱100,000</p>
-
-</div>
+}
 
 
-<div class="card">
-<h2>🎯 Dreams</h2>
+.quote{
 
-<ul>
-<li>🏪 Rice Business (2027)</li>
-<li>🚗 First Car (2028)</li>
-<li>🏢 First Condo (2028)</li>
-<li>✈️ Hong Kong Disneyland</li>
-<li>💍 Proposal ❤️</li>
-</ul>
+text-align:center;
+color:#ccc;
 
-</div>
+}
 
 
-<div class="card">
-<h2>🍔 Food Bucket List</h2>
 
-<label><input type="checkbox"> Jollibee Chickenjoy + Spaghetti</label>
-<label><input type="checkbox"> Chicken Inasal</label>
-<label><input type="checkbox"> Coco Milk Tea</label>
-<label><input type="checkbox"> Yellow Cab Pizza</label>
-<label><input type="checkbox"> Yakiniku</label>
+.card{
 
-</div>
+background:#1e1e1e;
+padding:20px;
+margin:15px 0;
+border-radius:20px;
+
+}
 
 
-<div class="card">
-<h2>🎁 Her Favorites</h2>
 
-<p>Perfume:</p>
-<ul>
-<li>Baccarat Rouge 540</li>
-<li>Zara Red Temptation Sweet</li>
-</ul>
+h2{
 
-<p>Colors:</p>
-<p>🖤 Black 💗 Pink ❤️ Maroon</p>
+color:#ff8fb3;
 
-<p>Coffee:</p>
-<p>☕ Iced Shaken Espresso<br>
-☕ White Mocha</p>
+}
 
-</div>
 
-</div>
 
-<script src="script.js"></script>
+label{
 
-</body>
-</html>
+display:block;
+margin:15px 0;
+
+}
+
+
+
+input{
+
+transform:scale(1.3);
+
+}
+
+
+
+.progress{
+
+height:15px;
+background:#333;
+border-radius:20px;
+overflow:hidden;
+
+}
+
+
+
+.bar{
+
+height:100%;
+width:0%;
+background:#ff5c8a;
+transition:.4s;
+
+}
+
+
+
+h3{
+
+color:#ffd1df;
+
+}
